@@ -31,13 +31,15 @@ function Terminal() {
         if (submittedContent == "HELP") {
           const midoutput = `
               <br />
-              C:&bsol;Users&bsol;Operator&bsol;Varun_Details&gt${submittedContent}
+              C:&bsol;Users&bsol;Operator&bsol;Varun_Details&gt${content}
               <br />
               C:&bsol;Users&bsol;Operator&bsol;Varun_Details&gt
               Commands and their functions:
               <br />
               <br />
               <b>help</b> : To know about all commands
+              <br />
+              <b>ctrl + l</b> : To clear the screen
               <br />
               <b>skills</b> : To know about the skills
               <br />
@@ -53,7 +55,7 @@ function Terminal() {
         } else if (submittedContent == "SKILLS") {
           const midoutput = `
               <br />
-              C:&bsol;Users&bsol;Operator&bsol;Varun_Details&gt${submittedContent}
+              C:&bsol;Users&bsol;Operator&bsol;Varun_Details&gt${content}
               <br />
               C:&bsol;Users&bsol;Operator&bsol;Varun_Details&gt
               <br />
@@ -71,7 +73,7 @@ function Terminal() {
         } else if (submittedContent == "PROJECTS") {
           const midoutput = `
               <br />
-              C:&bsol;Users&bsol;Operator&bsol;Varun_Details&gt${submittedContent}
+              C:&bsol;Users&bsol;Operator&bsol;Varun_Details&gt${content}
               <br />
               C:&bsol;Users&bsol;Operator&bsol;Varun_Details&gt
               <br />
@@ -87,7 +89,7 @@ function Terminal() {
         } else if (submittedContent == "EXP") {
           const midoutput = `
               <br />
-              C:&bsol;Users&bsol;Operator&bsol;Varun_Details&gt${submittedContent}
+              C:&bsol;Users&bsol;Operator&bsol;Varun_Details&gt${content}
               <br />
               C:&bsol;Users&bsol;Operator&bsol;Varun_Details&gt
               <br />
@@ -101,7 +103,7 @@ function Terminal() {
         } else if (submittedContent == "CONTACT") {
           const midoutput = `
               <br />
-              C:&bsol;Users&bsol;Operator&bsol;Varun_Details&gt${submittedContent}
+              C:&bsol;Users&bsol;Operator&bsol;Varun_Details&gt${content}
               <br />
               C:&bsol;Users&bsol;Operator&bsol;Varun_Details&gt
               <br />
@@ -120,13 +122,21 @@ function Terminal() {
           setOutput(prevOutput => prevOutput ? prevOutput + midoutput : midoutput);
           outputDivRef.current.style.display = 'inline';
 
-        } else if (submittedContent == "HELP") {
-
+        } else {
+          const midoutput = `
+              <br />
+              C:&bsol;Users&bsol;Operator&bsol;Varun_Details&gt${content}
+              <br />
+              C:&bsol;Users&bsol;Operator&bsol;Varun_Details&gt
+              <b>Invalid Command</b> For more information on your commands, type HELP
+          `;
+          setOutput(prevOutput => prevOutput ? prevOutput + midoutput : midoutput);
+          outputDivRef.current.style.display = 'inline';
         }
       } else {
         const midoutput = `
               <br />
-              C:&bsol;Users&bsol;Operator&bsol;Varun_Details&gt${submittedContent}
+              C:&bsol;Users&bsol;Operator&bsol;Varun_Details&gt${content}
               For more information on your commands, type HELP
           `;
         setOutput(prevOutput => prevOutput ? prevOutput + midoutput : midoutput);
@@ -167,7 +177,7 @@ function Terminal() {
               <Link to="/" className="px-3 h-full text-black hover:text-white hover:bg-red-600 bg-[#D1D4D3] flex justify-center items-center cursor-pointer">X</Link>
             </div>
           </div>
-          <div ref={containerDivRef} className="font-mono text-gray-200 bg-gray-800 p-4  overflow-x-auto overflow-y-scroll h-[70vh] pb-7">
+          <div ref={containerDivRef} className="font-mono text-sm sm:text-base text-gray-200 bg-gray-800 p-4  overflow-x-auto overflow-y-scroll h-[70vh] pb-7">
             Varun Windows [Version 12.3.45678.91011]
             <br />
             (c) Microsoft Corporation. All rights reserved.
