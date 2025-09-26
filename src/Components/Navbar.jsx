@@ -94,7 +94,7 @@ const Navbar = () => {
         </div>
       </nav>
       <HashLink to="/#Navbar">
-        <div className="abolute fixed p-3 bg-gray-300 bottom-2 right-5 rounded-full cursor-pointer">
+        <div className="abolute z-40 fixed p-3 bg-gray-300 bottom-2 right-5 rounded-full cursor-pointer">
           <i class="fa-solid fa-jet-fighter-up"></i>
         </div>
       </HashLink>

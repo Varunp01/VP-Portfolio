@@ -5,7 +5,7 @@ function Contact() {
 
   return (
     <>
-      <div className="bg-black mt-[1vh] py-10" id='Contact'>
+      <div className="bg-black mt-[1vh] py-10 pb-14" id='Contact'>
         <div class="flex flex-col justify-center">
           <style>
             {`

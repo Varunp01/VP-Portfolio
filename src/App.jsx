@@ -4,6 +4,7 @@ import './App.css'
 import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
 import Terminal from './Pages/Terminal';
+import Footer from './Components/Footer';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,7 +22,7 @@ function App() {
         </Route>
         <Route path="/contact" element={<Contact />} /> */}
       </Routes>
-
+<Footer></Footer>
     </BrowserRouter>
     </>
   )

@@ -46,29 +46,6 @@ function Experience() {
             <div className="flex flex-col items-start md:items-start text-left md:text-left md:w-1/2 p-4 bg-[#171717] rounded-xl">
               {/* <div className="flex flex-col items-end md:items-start text-left md:text-left md:w-1/2 p-4"> */}
               <h3 className="text-xl font-semibold text-white">AREVEI</h3>
-              <span className="text-base text-gray-300 italic">Web Developer Intern</span>
-              <span className="text-sm text-gray-400">2024 August-November</span>
-              <div className=" mt-2 text-sm text-gray-300 pl-7">
-                <ul className=' !list-disc !block !static items-end md:items-start text-left md:text-left'>
-                  <li>
-                    Developed full-stack websites for various startups, focusing on creating dynamic and user-friendly interfaces.
-                  </li>
-                  <li>
-                    Contributed to the development of a full-stack e-commerce website, integrating essential features such as an admin panel, secure payment gateways, and a functional shopping cart.
-                  </li>
-                  <li>
-                    Ensured client satisfaction by delivering a visually appealing and highly responsive website.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Timeline Item 2 */}
-          <div className="relative flex items-center justify-between md:justify-around w-full">
-            <div className="flex flex-col items-start md:items-end text-left md:text-right md:w-1/2 p-4 bg-[#171717] rounded-xl">
-              {/* <div className="flex flex-col items-end md:items-start text-left md:text-left md:w-1/2 p-4"> */}
-              <h3 className="text-xl font-semibold text-white">AREVEI</h3>
               <span className="text-base text-gray-300 italic">Web Developer & Project Manager</span>
               <span className="text-sm text-gray-400">2024 December-Present</span>
               <div className=" mt-2 text-sm text-gray-300 pl-7">
@@ -84,6 +61,29 @@ function Experience() {
                   </li>
                   <li>
                     Collaborated with design and content teams to translate client requirements into functional, responsive, and visually appealing web solutions.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Timeline Item 2 */}
+          <div className="relative flex items-center justify-between md:justify-around w-full">
+            <div className="flex flex-col items-start md:items-end text-left md:text-right md:w-1/2 p-4 bg-[#171717] rounded-xl">
+              {/* <div className="flex flex-col items-end md:items-start text-left md:text-left md:w-1/2 p-4"> */}
+              <h3 className="text-xl font-semibold text-white">AREVEI</h3>
+              <span className="text-base text-gray-300 italic">Web Developer Intern</span>
+              <span className="text-sm text-gray-400">2024 August-November</span>
+              <div className=" mt-2 text-sm text-gray-300 pl-7">
+                <ul className=' !list-disc !block !static items-end md:items-start text-left md:text-left'>
+                  <li>
+                    Developed full-stack websites for various startups, focusing on creating dynamic and user-friendly interfaces.
+                  </li>
+                  <li>
+                    Contributed to the development of a full-stack e-commerce website, integrating essential features such as an admin panel, secure payment gateways, and a functional shopping cart.
+                  </li>
+                  <li>
+                    Ensured client satisfaction by delivering a visually appealing and highly responsive website.
                   </li>
                 </ul>
               </div>
