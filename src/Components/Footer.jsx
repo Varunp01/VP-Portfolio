@@ -7,7 +7,7 @@ function Footer() {
 
   return (
     <>
-    <footer className="bg-black text-gray-400 font-sans pt-5">
+    <footer className="bg-black text-gray-400 font-sans pt-5 pb-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-5">
         
         {/* Call to Action Section */}

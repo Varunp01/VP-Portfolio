@@ -14,7 +14,7 @@ function HomeHeroTemplate() {
   }, []);
   return (
     <>
-      <div className="bg-black h-[94vh] w-full relative z-0  overflow-hidden">
+      <div className="bg-black h-[99vh] w-full relative z-0  overflow-hidden">
 
         {/* //text animation */}
         <div className="absolute w-full h-[300px] blur-2xl bg-[#000000c8]   top-[120px] md:top-[80px] z-19">&nbsp;</div>
@@ -94,7 +94,7 @@ function HomeHeroTemplate() {
 
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-20">
           <div className="HeroImg">
-            <img src="/Varun.png" alt="Placeholder Image" className=' md:h-[47vh] aspect-square cover'></img>
+            <img src="/Varun.png" alt="Placeholder Image" className='!w-[90vw] md:w-auto max-w-[300px] cover'></img>
           </div>
         </div>
 

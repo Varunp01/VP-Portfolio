@@ -11,12 +11,14 @@ function Home() {
 
   return (
     <>
+    <div className="bg-black" id="Home">
     <HomeHero></HomeHero>
     <Skills></Skills>
     <Projects></Projects>
     <Experience></Experience>
     <Contact></Contact>
     <Cube></Cube>
+    </div>
     </>
   )
 }
