@@ -14,34 +14,40 @@ function HomeHeroTemplate() {
   }, []);
   return (
     <>
-      <div className="bg-black h-[99vh] w-full relative z-0  overflow-hidden">
-
-        {/* //text animation */}
-        <div className="absolute w-full h-[300px] blur-2xl bg-[#000000c8]   top-[120px] md:top-[80px] z-19">&nbsp;</div>
-        <div className="absolute w-full   flex flex-wrap justify-center items-center top-[120px] md:top-[80px] z-20 space-y-3">
-          <h1 className="w-full h-auto text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 text-center">
-            Hi, I'm
-            <span className=''>
-              <div className="shadow-dance-container">
-                <h1 className="shadow-dance-text">Varun Pandey</h1>
+        <div className="bg-black w-full relative z-0  overflow-hidden">
+          {/* //text animation */}
+          <div className="w-full   flex flex-wrap justify-center items-center mt-[150px] md:mt-[120px] z-20 space-y-3 px-10">
+            <h1 className="w-full h-auto text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 text-center sm:text-left">
+              Hi, I'm
+              <span className=''>
+                <div className="shadow-dance-container">
+                  <h1 className="shadow-dance-text">Varun Pandey</h1>
+                </div>
+              </span>
+            </h1>
+            <br />
+            <div className="text-center sm:text-left my-7">
+              <h1 className=" relative text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-lime-400 font-mono glitch-text "
+                data-text={`${titles[currentTitleIndex]}`} >
+                {titles[currentTitleIndex]}
+              </h1>
+            </div>
+            <div className="grid md:grid-cols-2 grid-cols-1 grid-rows-1 gap-4 mt-3">
+              <div className="w-full text-gray-500 font-semibold text-center sm:text-left text-sm sm:text-base md:text-lg lg:text-xl">
+                <h1>
+                  Over a year of experience transforming concepts into user-centric web applications. Specializing in <span className='text-white'>Shopify</span>, <span className='text-white'>WordPress</span>, and the <span className='text-white'>MERN stack</span> to deliver scalable and dynamic solutions.
+                </h1>
               </div>
-            </span>
-          </h1>
-          <br />
-          <h1
-            className="
-            relative text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-lime-400 font-mono text-center
-            glitch-text
-          "
-            data-text={`${titles[currentTitleIndex]}`}
-          >
-            {titles[currentTitleIndex]}
-          </h1>
-        </div>
-
-        {/* Custom CSS for the glitch effect */}
-        <style>
-          {`
+              <div className=" flex justify-center items-center my-5">
+                <div className="btn cursor-pointer px-4 py-2 bg-[#2a2a2a] rounded-xl text-xl uppercase font-bold text-lime-400 tracking-wider font-mono hover:bg-lime-400 hover:text-black transition-all duration-300">
+                  Download Resume
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Custom CSS for the glitch effect */}
+          <style>
+            {`
           .shadow-dance-text {
           color: #fff;
           font-size: 3rem;
@@ -90,136 +96,47 @@ function HomeHeroTemplate() {
             }
           }
         `}
+          </style>
+
+
+        </div>
+        <div className="bg-black pt-28">
+        <style>
+          {`
+          .radial_gradient{
+          background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(135, 135, 135, 1) 100%);
+          }
+          `}
         </style>
-
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-20">
-          <div className="HeroImg">
-            <img src="/Varun.png" alt="Placeholder Image" className='!w-[90vw] md:w-auto max-w-[300px] cover'></img>
+        <div className="grid grid-cols-4 grid-rows-1 gap-4 px-4">
+          <div className="">
+            <div className="flex justify-center items-center">
+              <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit1-slow " style={{ animationDelay: '-3s' }} >
+                <img src="/HeroBannerIcons/code.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div className="relative top-full left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
-          <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit1-slow " style={{ animationDelay: '0s' }} >
-            <img src="\HeroBannerIcons\bag.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
+          <div className="">
+            <div className="flex justify-center items-center">
+              <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit1-slow " style={{ animationDelay: '-3s' }} >
+                <img src="/HeroBannerIcons/shopify.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
+              </div>
+            </div>
           </div>
-          <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit1-slow " style={{ animationDelay: '-3s' }} >
-            <img src="\HeroBannerIcons\code.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
+          <div className="">
+            <div className="flex justify-center items-center">
+              <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit1-slow " style={{ animationDelay: '-3s' }} >
+                <img src="/HeroBannerIcons/softwareDeveloper.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
+              </div>
+            </div>
           </div>
-          <style jsx>{`
-        @keyframes orbit1 {
-          from {
-            transform: rotate(0deg) translateX(100px) rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg) translateX(100px) rotate(-360deg);
-          }
-        }
-        .animate-orbit1-slow {
-          animation: orbit1 6s linear infinite;
-        }
-      `}</style>
-        </div>
-
-        <div className="relative top-full left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
-          <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit2-slow " style={{ animationDelay: '0s' }} >
-            <img src="\HeroBannerIcons\bagDiscount.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
+          <div className="">
+            <div className="flex justify-center items-center">
+              <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit1-slow " style={{ animationDelay: '-3s' }} >
+                <img src="/HeroBannerIcons/wordpress-icon.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
+              </div>
+            </div>
           </div>
-          <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit2-slow " style={{ animationDelay: '-2s' }} >
-            <img src="\HeroBannerIcons\barCharts.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
-          </div>
-          <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit2-slow " style={{ animationDelay: '-4s' }} >
-            <img src="\HeroBannerIcons\card.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
-          </div>
-          <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit2-slow " style={{ animationDelay: '-6s' }} >
-            <img src="\HeroBannerIcons\css.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
-          </div>
-
-          <style jsx>{`
-        @keyframes orbit2 {
-          from {
-            transform: rotate(0deg) translateX(200px) rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg) translateX(200px) rotate(-360deg);
-          }
-        }
-        .animate-orbit2-slow {
-          animation: orbit2 8s linear infinite;
-        }
-      `}</style>
-        </div>
-        <div className="relative top-full left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
-          <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit3-slow " style={{ animationDelay: '0s' }} >
-            <img src="\HeroBannerIcons\instagram.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
-          </div>
-          <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit3-slow " style={{ animationDelay: '-2s' }} >
-            <img src="\HeroBannerIcons\facebook.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
-          </div>
-          <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit3-slow " style={{ animationDelay: '-4s' }} >
-            <img src="\HeroBannerIcons\graphLaptop.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
-          </div>
-          <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit3-slow " style={{ animationDelay: '-6s' }} >
-            <img src="\HeroBannerIcons\html.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
-          </div>
-          <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit3-slow " style={{ animationDelay: '-8s' }} >
-            <img src="\HeroBannerIcons\js.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
-          </div>
-          <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit3-slow " style={{ animationDelay: '-10s' }} >
-            <img src="\HeroBannerIcons\laptopCode.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
-          </div>
-
-          <style jsx>{`
-        @keyframes orbit3 {
-          from {
-            transform: rotate(0deg) translateX(300px) rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg) translateX(300px) rotate(-360deg);
-          }
-        }
-        .animate-orbit3-slow {
-          animation: orbit3 12s linear infinite;
-        }
-      `}</style>
-        </div>
-        <div className="relative top-full left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center">
-          <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit4-slow " style={{ animationDelay: '0s' }} >
-            <img src="\HeroBannerIcons\laptopDataGrowth.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
-          </div>
-          <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit4-slow " style={{ animationDelay: '-2s' }} >
-            <img src="\HeroBannerIcons\online-shop-mobile.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
-          </div>
-          <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit4-slow " style={{ animationDelay: '-4s' }} >
-            <img src="\HeroBannerIcons\shopify.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
-          </div>
-          <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit4-slow " style={{ animationDelay: '-6s' }} >
-            <img src="\HeroBannerIcons\shoppingCart.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
-          </div>
-          <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit4-slow " style={{ animationDelay: '-8s' }} >
-            <img src="\HeroBannerIcons\snapchat.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
-          </div>
-          <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit4-slow " style={{ animationDelay: '-10s' }} >
-            <img src="\HeroBannerIcons\socialMediaNetwork.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
-          </div>
-          <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit4-slow " style={{ animationDelay: '-12s' }} >
-            <img src="\HeroBannerIcons\softwareDeveloper.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
-          </div>
-          <div className="absolute p-4 rounded-full bg-white/25 shadow-md shadow-gray-400 animate-orbit4-slow " style={{ animationDelay: '-14s' }} >
-            <img src="\HeroBannerIcons\wordpress-icon.svg" alt="Placeholder Image" className='h-[50px] aspect-square cover drop-shadow-gray' />
-          </div>
-          <style jsx>{`
-        @keyframes orbit4 {
-          from {
-            transform: rotate(0deg) translateX(400px) rotate(0deg);
-          }
-          to {
-            transform: rotate(360deg) translateX(400px) rotate(-360deg);
-          }
-        }
-        .animate-orbit4-slow {
-          animation: orbit4 16s linear infinite;
-        }
-      `}</style>
         </div>
       </div>
     </>

@@ -6,7 +6,7 @@ function HomeHero() {
 
   return (
     <>
-    <div className="bg-black h-[95vh] w-full">
+    <div className="bg-black w-full">
       <HomeHeroTemplate></HomeHeroTemplate>
       
     </div>

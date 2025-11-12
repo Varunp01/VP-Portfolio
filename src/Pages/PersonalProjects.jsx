@@ -176,7 +176,7 @@ const ProfessionalDivRef = useRef(null);
                 {/* <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
                 <i className="fa-brands fa-github text-2xl"></i>
               </button> */}
-                <a target="_blank" href="https://jenii.in/">
+                <a target="_blank" href="https://jwellery-shop.vercel.app/">
                   <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
                     <i class="fa-solid fa-bars-staggered text-2xl"></i>
                   </button>

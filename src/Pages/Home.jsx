@@ -5,20 +5,33 @@ import Projects from '../Components/Projects'
 import Experience from '../Components/Experience'
 import Contact from '../Components/Contact'
 import Cube from '../Components/Cube'
+import OpacityInOnScroll from '../OpacityInOnScroll'
 
 function Home() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <div className="bg-black" id="Home">
-    <HomeHero></HomeHero>
-    <Skills></Skills>
-    <Projects></Projects>
-    <Experience></Experience>
-    <Contact></Contact>
-    <Cube></Cube>
-    </div>
+      <div className="bg-black" id="Home">
+        <OpacityInOnScroll>
+          <HomeHero></HomeHero>
+        </OpacityInOnScroll>
+        <OpacityInOnScroll>
+          <Skills></Skills>
+        </OpacityInOnScroll>
+        <OpacityInOnScroll>
+          <Projects></Projects>
+        </OpacityInOnScroll>
+        <OpacityInOnScroll>
+          <Experience></Experience>
+        </OpacityInOnScroll>
+        <OpacityInOnScroll>
+          <Contact></Contact>
+        </OpacityInOnScroll>
+        <OpacityInOnScroll>
+          <Cube></Cube>
+        </OpacityInOnScroll>
+      </div>
     </>
   )
 }
