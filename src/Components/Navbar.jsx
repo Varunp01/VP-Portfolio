@@ -53,12 +53,12 @@ const Navbar = () => {
                 </div>
                 <div className="flex items-center">
                   {/* Desktop Navigation Links */}
-                  <Link to="/terminal" className=" text-white bg-black border-1 hover:border-t-4 border-gray-600 hover:border-white transition duration-300 ease-in-out px-3 py-2 rounded-md font-medium">&gt;_</Link>
+                  <Link to="/terminal" className=" text-white bg-black border-1 hover:border-t-4 border-gray-600 hover:border-white transition duration-300 ease-in-out px-3 py-2 rounded-md font-medium mx-3">&gt;_</Link>
                   <div className="hidden md:flex space-x-8">
-                    <HashLink to="/" className="text-black hover:text-white transition-all duration-300 ease-in-out px-3 py-2 rounded-md font-medium">Home</HashLink>
-                    <HashLink to="/#skills" className="text-black hover:text-white transition-all duration-300 ease-in-out px-3 py-2 rounded-md font-medium">Skills</HashLink>
-                    <HashLink to="/#Projects" className="text-black hover:text-white transition-all duration-300 ease-in-out px-3 py-2 rounded-md font-medium">Projects</HashLink>
-                    <HashLink to="/#Experience" className="text-black hover:text-white transition-all duration-300 ease-in-out px-3 py-2 rounded-md font-medium">Experience</HashLink>
+                    <HashLink to="/" className="text-black hover:text-white transition-all duration-300 ease-in-out px-3 py-2 rounded-md font-medium hover:bg-black">Home</HashLink>
+                    <HashLink to="/#skills" className="text-black hover:text-white transition-all duration-300 ease-in-out px-3 py-2 rounded-md font-medium hover:bg-black">Skills</HashLink>
+                    <HashLink to="/#Projects" className="text-black hover:text-white transition-all duration-300 ease-in-out px-3 py-2 rounded-md font-medium hover:bg-black">Projects</HashLink>
+                    <HashLink to="/#Experience" className="text-black hover:text-white transition-all duration-300 ease-in-out px-3 py-2 rounded-md font-medium hover:bg-black">Experience</HashLink>
                     <HashLink to="/#Contact" className=" text-white   transition-all duration-300 ease-in-out rounded-md font-medium !cursor-pointer">
                       <button
                         class="bg-[#ffffff9c] hover:bg-[#ffffffa9] border-2 border-black text-center w-[150px] rounded-2xl h-full relative text-black text-xl font-semibold group cursor-pointer"

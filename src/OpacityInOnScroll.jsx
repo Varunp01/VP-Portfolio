@@ -41,7 +41,7 @@ const OpacityInOnScroll = ({ children, delay = 'delay-0' }) => {
     <div
       ref={domRef}
       // Combine static transition classes with the dynamic animation classes
-      className={`transition-all duration-2000 ${delay} ${animationClasses}`}
+      className={`transition-all duration-1000 ${delay} ${animationClasses}`}
     >
       {children}
     </div>
