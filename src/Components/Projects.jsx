@@ -70,9 +70,9 @@ function Projects() {
               {/* <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
                 <i className="fa-brands fa-github text-2xl"></i>
               </button> */}
-              <a target="_blank" href="https://www.sgtmake.com/">
-              <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
-                <i class="fa-solid fa-bars-staggered text-2xl"></i>
+              <a target="_blank" href="https://www.sgtmake.com/" className='group'>
+              <button className='cursor-pointer bg-gradient-to-t from-[#EF0808] to-[#B8080A] px-6 py-2 rounded-lg flex justify-around items-center space-x-3 group-hover:bg-gradient-to-t group-hover:from-white group-hover:to-white transition duration-300 ease-in-out'>
+                <span className='text-2xl text-white group-hover:text-[#EF0808] items-center transition duration-300 ease-in-out'><i class="fa-solid fa-tower-broadcast"></i></span><span className='text-xl text-white group-hover:text-[#B8080A] uppercase font-bold leading-loose font-mono transition duration-300 ease-in-out'>Live</span>
               </button>
               </a>
             </div>
@@ -96,9 +96,9 @@ function Projects() {
               {/* <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
                 <i className="fa-brands fa-github text-2xl"></i>
               </button> */}
-              <a target="_blank" href="https://inksutra.com/">
-              <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
-                <i class="fa-solid fa-bars-staggered text-2xl"></i>
+              <a target="_blank" href="https://inksutra.com/" className='group'>
+              <button className='cursor-pointer bg-gradient-to-t from-[#EF0808] to-[#B8080A] px-6 py-2 rounded-lg flex justify-around items-center space-x-3 group-hover:bg-gradient-to-t group-hover:from-white group-hover:to-white transition duration-300 ease-in-out'>
+                <span className='text-2xl text-white group-hover:text-[#EF0808] items-center transition duration-300 ease-in-out'><i class="fa-solid fa-tower-broadcast"></i></span><span className='text-xl text-white group-hover:text-[#B8080A] uppercase font-bold leading-loose font-mono transition duration-300 ease-in-out'>Live</span>
               </button>
               </a>
             </div>
@@ -122,9 +122,9 @@ function Projects() {
               {/* <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
                 <i className="fa-brands fa-github text-2xl"></i>
               </button> */}
-              <a target="_blank" href="https://languageandlearningfoundation.org/">
-              <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
-                <i class="fa-solid fa-bars-staggered text-2xl"></i>
+              <a target="_blank" href="https://languageandlearningfoundation.org/" className='group'>
+              <button className='cursor-pointer bg-gradient-to-t from-[#EF0808] to-[#B8080A] px-6 py-2 rounded-lg flex justify-around items-center space-x-3 group-hover:bg-gradient-to-t group-hover:from-white group-hover:to-white transition duration-300 ease-in-out'>
+                <span className='text-2xl text-white group-hover:text-[#EF0808] items-center transition duration-300 ease-in-out'><i class="fa-solid fa-tower-broadcast"></i></span><span className='text-xl text-white group-hover:text-[#B8080A] uppercase font-bold leading-loose font-mono transition duration-300 ease-in-out'>Live</span>
               </button>
               </a>
             </div>

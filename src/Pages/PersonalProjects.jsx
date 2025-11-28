@@ -3,8 +3,8 @@ import { useState, useRef, useEffect } from 'react';
 
 function PersonalProjects() {
   const [isVisible, setIsVisible] = useState(false);
-const PersonalDivRef = useRef(null);
-const ProfessionalDivRef = useRef(null);
+  const PersonalDivRef = useRef(null);
+  const ProfessionalDivRef = useRef(null);
 
   const handleClick = () => {
     setIsVisible(!isVisible);
@@ -14,12 +14,12 @@ const ProfessionalDivRef = useRef(null);
     document.body.scrollTop = document.documentElement.scrollTop = 0;
     ProfessionalDivRef.current.style.display = 'flex';
     PersonalDivRef.current.style.display = 'none';
-  },[])
-  const showProfessionalDiv=()=>{
+  }, [])
+  const showProfessionalDiv = () => {
     ProfessionalDivRef.current.style.display = 'flex';
     PersonalDivRef.current.style.display = 'none';
   }
-  const showpersonalDiv=()=>{
+  const showpersonalDiv = () => {
     ProfessionalDivRef.current.style.display = 'none';
     PersonalDivRef.current.style.display = 'flex';
   }
@@ -85,10 +85,10 @@ const ProfessionalDivRef = useRef(null);
                 {/* <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
                 <i className="fa-brands fa-github text-2xl"></i>
               </button> */}
-                <a target="_blank" href="https://www.sgtmake.com/">
-                  <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
-                    <i class="fa-solid fa-bars-staggered text-2xl"></i>
-                  </button>
+                <a target="_blank" href="https://www.sgtmake.com/" className='group'>
+              <button className='cursor-pointer bg-gradient-to-t from-[#EF0808] to-[#B8080A] px-6 py-2 rounded-lg flex justify-around items-center space-x-3 group-hover:bg-gradient-to-t group-hover:from-white group-hover:to-white transition duration-300 ease-in-out'>
+                <span className='text-2xl text-white group-hover:text-[#EF0808] items-center transition duration-300 ease-in-out'><i class="fa-solid fa-tower-broadcast"></i></span><span className='text-xl text-white group-hover:text-[#B8080A] uppercase font-bold leading-loose font-mono transition duration-300 ease-in-out'>Live</span>
+              </button>
                 </a>
               </div>
             </div>
@@ -111,10 +111,10 @@ const ProfessionalDivRef = useRef(null);
                 {/* <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
                 <i className="fa-brands fa-github text-2xl"></i>
               </button> */}
-                <a target="_blank" href="https://inksutra.com/">
-                  <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
-                    <i class="fa-solid fa-bars-staggered text-2xl"></i>
-                  </button>
+                <a target="_blank" href="https://inksutra.com/" className='group'>
+              <button className='cursor-pointer bg-gradient-to-t from-[#EF0808] to-[#B8080A] px-6 py-2 rounded-lg flex justify-around items-center space-x-3 group-hover:bg-gradient-to-t group-hover:from-white group-hover:to-white transition duration-300 ease-in-out'>
+                <span className='text-2xl text-white group-hover:text-[#EF0808] items-center transition duration-300 ease-in-out'><i class="fa-solid fa-tower-broadcast"></i></span><span className='text-xl text-white group-hover:text-[#B8080A] uppercase font-bold leading-loose font-mono transition duration-300 ease-in-out'>Live</span>
+              </button>
                 </a>
               </div>
             </div>
@@ -137,10 +137,10 @@ const ProfessionalDivRef = useRef(null);
                 {/* <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
                 <i className="fa-brands fa-github text-2xl"></i>
               </button> */}
-                <a target="_blank" href="https://languageandlearningfoundation.org/">
-                  <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
-                    <i class="fa-solid fa-bars-staggered text-2xl"></i>
-                  </button>
+                <a target="_blank" href="https://languageandlearningfoundation.org/" className='group'>
+              <button className='cursor-pointer bg-gradient-to-t from-[#EF0808] to-[#B8080A] px-6 py-2 rounded-lg flex justify-around items-center space-x-3 group-hover:bg-gradient-to-t group-hover:from-white group-hover:to-white transition duration-300 ease-in-out'>
+                <span className='text-2xl text-white group-hover:text-[#EF0808] items-center transition duration-300 ease-in-out'><i class="fa-solid fa-tower-broadcast"></i></span><span className='text-xl text-white group-hover:text-[#B8080A] uppercase font-bold leading-loose font-mono transition duration-300 ease-in-out'>Live</span>
+              </button>
                 </a>
               </div>
             </div>
@@ -176,10 +176,10 @@ const ProfessionalDivRef = useRef(null);
                 {/* <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
                 <i className="fa-brands fa-github text-2xl"></i>
               </button> */}
-                <a target="_blank" href="https://jwellery-shop.vercel.app/">
-                  <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
-                    <i class="fa-solid fa-bars-staggered text-2xl"></i>
-                  </button>
+                <a target="_blank" href="https://jwellery-shop.vercel.app/" className='group'>
+              <button className='cursor-pointer bg-gradient-to-t from-[#EF0808] to-[#B8080A] px-6 py-2 rounded-lg flex justify-around items-center space-x-3 group-hover:bg-gradient-to-t group-hover:from-white group-hover:to-white transition duration-300 ease-in-out'>
+                <span className='text-2xl text-white group-hover:text-[#EF0808] items-center transition duration-300 ease-in-out'><i class="fa-solid fa-tower-broadcast"></i></span><span className='text-xl text-white group-hover:text-[#B8080A] uppercase font-bold leading-loose font-mono transition duration-300 ease-in-out'>Live</span>
+              </button>
                 </a>
               </div>
             </div>
@@ -202,10 +202,10 @@ const ProfessionalDivRef = useRef(null);
                 {/* <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
                 <i className="fa-brands fa-github text-2xl"></i>
               </button> */}
-                <a target="_blank" href="https://the-brick-oven-bistro.arevei.tech/">
-                  <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
-                    <i class="fa-solid fa-bars-staggered text-2xl"></i>
-                  </button>
+                <a target="_blank" href="https://the-brick-oven-bistro.arevei.tech/" className='group'>
+              <button className='cursor-pointer bg-gradient-to-t from-[#EF0808] to-[#B8080A] px-6 py-2 rounded-lg flex justify-around items-center space-x-3 group-hover:bg-gradient-to-t group-hover:from-white group-hover:to-white transition duration-300 ease-in-out'>
+                <span className='text-2xl text-white group-hover:text-[#EF0808] items-center transition duration-300 ease-in-out'><i class="fa-solid fa-tower-broadcast"></i></span><span className='text-xl text-white group-hover:text-[#B8080A] uppercase font-bold leading-loose font-mono transition duration-300 ease-in-out'>Live</span>
+              </button>
                 </a>
               </div>
             </div>
@@ -228,10 +228,37 @@ const ProfessionalDivRef = useRef(null);
                 {/* <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
                 <i className="fa-brands fa-github text-2xl"></i>
               </button> */}
-                <a target="_blank" href="https://www.gracemissioninternational.com/">
-                  <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
-                    <i class="fa-solid fa-bars-staggered text-2xl"></i>
-                  </button>
+                <a target="_blank" href="https://www.gracemissioninternational.com/" className='group'>
+              <button className='cursor-pointer bg-gradient-to-t from-[#EF0808] to-[#B8080A] px-6 py-2 rounded-lg flex justify-around items-center space-x-3 group-hover:bg-gradient-to-t group-hover:from-white group-hover:to-white transition duration-300 ease-in-out'>
+                <span className='text-2xl text-white group-hover:text-[#EF0808] items-center transition duration-300 ease-in-out'><i class="fa-solid fa-tower-broadcast"></i></span><span className='text-xl text-white group-hover:text-[#B8080A] uppercase font-bold leading-loose font-mono transition duration-300 ease-in-out'>Live</span>
+              </button>
+                </a>
+              </div>
+            </div>
+
+            <div className={`my-5 mx-0.5 relative flex w-80 flex-col rounded-xl bg-[#ffffff15] hover:bg-[#ffffff00] border-2 border-[#ffffff27] hover:border-[#ffffff] text-gray-500 hover:text-white bg-clip-border  shadow-md transition-all duration-500 ${isVisible ? "" : "hidden"}`}>
+              <img src="\Projects\organization-management-system.PNG" className="border-2 border-white relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600"></img>
+              <div className="p-6">
+                <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
+                  Organization Management System
+                </h5>
+                <p className="font-mono block  text-base  text-inherit antialiased">
+                  A responsive Office Management System, built on the MERN stack with React to showcase my backend and frontend expertise.
+                </p>
+                <div className="flex mt-4 space-x-1">
+                  <span className='px-3 py-1 bg-[#3230C1] rounded-2xl text-sm text-white'>MERN Stack</span>
+                  <span className='px-3 py-1 bg-[#3230C1] rounded-2xl text-sm text-white'>ReactJs</span>
+                  <span className='px-3 py-1 bg-[#3230C1] rounded-2xl text-sm text-white'>MongoDB</span>
+                </div>
+              </div>
+              <div className="p-6 pt-0 space-x-2">
+                {/* <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
+                <i className="fa-brands fa-github text-2xl"></i>
+              </button> */}
+                <a target="_blank" href="https://management-system-frontend-silk.vercel.app/" className='group'>
+              <button className='cursor-pointer bg-gradient-to-t from-[#EF0808] to-[#B8080A] px-6 py-2 rounded-lg flex justify-around items-center space-x-3 group-hover:bg-gradient-to-t group-hover:from-white group-hover:to-white transition duration-300 ease-in-out'>
+                <span className='text-2xl text-white group-hover:text-[#EF0808] items-center transition duration-300 ease-in-out'><i class="fa-solid fa-tower-broadcast"></i></span><span className='text-xl text-white group-hover:text-[#B8080A] uppercase font-bold leading-loose font-mono transition duration-300 ease-in-out'>Live</span>
+              </button>
                 </a>
               </div>
             </div>
@@ -258,10 +285,10 @@ const ProfessionalDivRef = useRef(null);
                 {/* <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
                 <i className="fa-brands fa-github text-2xl"></i>
               </button> */}
-                <a target="_blank" href="https://inksutra.com/">
-                  <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
-                    <i class="fa-solid fa-bars-staggered text-2xl"></i>
-                  </button>
+                <a target="_blank" href="https://inksutra.com/" className='group'>
+              <button className='cursor-pointer bg-gradient-to-t from-[#EF0808] to-[#B8080A] px-6 py-2 rounded-lg flex justify-around items-center space-x-3 group-hover:bg-gradient-to-t group-hover:from-white group-hover:to-white transition duration-300 ease-in-out'>
+                <span className='text-2xl text-white group-hover:text-[#EF0808] items-center transition duration-300 ease-in-out'><i class="fa-solid fa-tower-broadcast"></i></span><span className='text-xl text-white group-hover:text-[#B8080A] uppercase font-bold leading-loose font-mono transition duration-300 ease-in-out'>Live</span>
+              </button>
                 </a>
               </div>
             </div>
@@ -283,10 +310,10 @@ const ProfessionalDivRef = useRef(null);
                 {/* <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
                 <i className="fa-brands fa-github text-2xl"></i>
               </button> */}
-                <a target="_blank" href="https://languageandlearningfoundation.org/">
-                  <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
-                    <i class="fa-solid fa-bars-staggered text-2xl"></i>
-                  </button>
+                <a target="_blank" href="https://languageandlearningfoundation.org/" className='group'>
+              <button className='cursor-pointer bg-gradient-to-t from-[#EF0808] to-[#B8080A] px-6 py-2 rounded-lg flex justify-around items-center space-x-3 group-hover:bg-gradient-to-t group-hover:from-white group-hover:to-white transition duration-300 ease-in-out'>
+                <span className='text-2xl text-white group-hover:text-[#EF0808] items-center transition duration-300 ease-in-out'><i class="fa-solid fa-tower-broadcast"></i></span><span className='text-xl text-white group-hover:text-[#B8080A] uppercase font-bold leading-loose font-mono transition duration-300 ease-in-out'>Live</span>
+              </button>
                 </a>
               </div>
             </div>
@@ -322,10 +349,10 @@ const ProfessionalDivRef = useRef(null);
                 {/* <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
                 <i className="fa-brands fa-github text-2xl"></i>
               </button> */}
-                <a target="_blank" href="https://www.sgtmake.com/">
-                  <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
-                    <i class="fa-solid fa-bars-staggered text-2xl"></i>
-                  </button>
+                <a target="_blank" href="https://www.sgtmake.com/" className='group'>
+              <button className='cursor-pointer bg-gradient-to-t from-[#EF0808] to-[#B8080A] px-6 py-2 rounded-lg flex justify-around items-center space-x-3 group-hover:bg-gradient-to-t group-hover:from-white group-hover:to-white transition duration-300 ease-in-out'>
+                <span className='text-2xl text-white group-hover:text-[#EF0808] items-center transition duration-300 ease-in-out'><i class="fa-solid fa-tower-broadcast"></i></span><span className='text-xl text-white group-hover:text-[#B8080A] uppercase font-bold leading-loose font-mono transition duration-300 ease-in-out'>Live</span>
+              </button>
                 </a>
               </div>
             </div>
@@ -348,10 +375,10 @@ const ProfessionalDivRef = useRef(null);
                 {/* <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
                 <i className="fa-brands fa-github text-2xl"></i>
               </button> */}
-                <a target="_blank" href="https://the-brick-oven-bistro.arevei.tech/">
-                  <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
-                    <i class="fa-solid fa-bars-staggered text-2xl"></i>
-                  </button>
+                <a target="_blank" href="https://the-brick-oven-bistro.arevei.tech/" className='group'>
+              <button className='cursor-pointer bg-gradient-to-t from-[#EF0808] to-[#B8080A] px-6 py-2 rounded-lg flex justify-around items-center space-x-3 group-hover:bg-gradient-to-t group-hover:from-white group-hover:to-white transition duration-300 ease-in-out'>
+                <span className='text-2xl text-white group-hover:text-[#EF0808] items-center transition duration-300 ease-in-out'><i class="fa-solid fa-tower-broadcast"></i></span><span className='text-xl text-white group-hover:text-[#B8080A] uppercase font-bold leading-loose font-mono transition duration-300 ease-in-out'>Live</span>
+              </button>
                 </a>
               </div>
             </div>
@@ -374,10 +401,10 @@ const ProfessionalDivRef = useRef(null);
                 {/* <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
                 <i className="fa-brands fa-github text-2xl"></i>
               </button> */}
-                <a target="_blank" href="https://www.gracemissioninternational.com/">
-                  <button data-ripple-light="true" type="button" className=" select-none rounded-full bg-blue-500 hover:bg-blue-700 py-1 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none cursor-pointer">
-                    <i class="fa-solid fa-bars-staggered text-2xl"></i>
-                  </button>
+                <a target="_blank" href="https://www.gracemissioninternational.com/" className='group'>
+              <button className='cursor-pointer bg-gradient-to-t from-[#EF0808] to-[#B8080A] px-6 py-2 rounded-lg flex justify-around items-center space-x-3 group-hover:bg-gradient-to-t group-hover:from-white group-hover:to-white transition duration-300 ease-in-out'>
+                <span className='text-2xl text-white group-hover:text-[#EF0808] items-center transition duration-300 ease-in-out'><i class="fa-solid fa-tower-broadcast"></i></span><span className='text-xl text-white group-hover:text-[#B8080A] uppercase font-bold leading-loose font-mono transition duration-300 ease-in-out'>Live</span>
+              </button>
                 </a>
               </div>
             </div>
