@@ -39,9 +39,11 @@ function HomeHeroTemplate() {
                 </h1>
               </div>
               <div className=" flex justify-center items-center my-5">
+                <a href="/Varun Resume Dec 2025.pdf" target="_blank" rel="noopener noreferrer">
                 <div className="btn cursor-pointer px-4 py-2 bg-[#2a2a2a] rounded-xl text-xl uppercase font-bold text-lime-400 tracking-wider font-mono hover:bg-lime-400 hover:text-black transition-all duration-300">
                   Download Resume
                 </div>
+                </a>
               </div>
             </div>
           </div>
