@@ -204,7 +204,7 @@ function Course() {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto px-6 py-16 bg-[#F0F0F7]">
+      <div className="max-w-7xl mx-auto px-6 py-16 bg-[#F0F0F7] pt-32">
 
         {/* HEADER */}
         <div className="text-center mb-12">
