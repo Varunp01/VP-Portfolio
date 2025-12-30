@@ -11,6 +11,7 @@ import NotFound from './Pages/NotFound';
 import NotesApp from './PersonalProjectsComponents/NotesApp';
 import StopWatch from './PersonalProjectsComponents/StopWatch';
 import CoverPage from './CoverPage';
+import Course from './PersonalProjectsComponents/test';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -38,6 +39,7 @@ const [showDelayedComponent, setShowDelayedComponent] = useState(false);
           <Route path="/calculator" element={<Calculator />} />
           <Route path="/notesApp" element={<NotesApp />} />
           <Route path="/stopwatch" element={<StopWatch />} />
+          <Route path="/courses" element={<Course />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
         <Footer></Footer>
